@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anzhelika Kostyuk Portfolio</title>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="btntop">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("btntop");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    <div class="topheader">
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="leftside">
+            <div class="info">
+                <h2>Hello! I am</h2>
+                <h1 style="color: #ED3D63; font-size: 50px;"><em>Anzhelika Kostyuk</em></h1>
+                <h3>Computer Programmer - Analyst - Web Designer</h3>
+                <button class="btnresume"><a style="font-family: Georgia, serif;" href="resume.docx" download>Download Resume</a></button>
+            </div>
+        </div>
+        <div class="rightside">
+            <img id="profile" src="img/profile.jpg">
+        </div>
+    </div>
+    <div class="skills">
+        <h2 class="hh2" id="skills" style="color: #ED3D63; font-size: 40px; text-align: center;"><em>Skills</em></h2>
+        <ul class="ulskills">
+            <li class="liskills">       
+              <h3 class="h3skills">Programming</h3>
+              <p>HTML/CSS, C#, Java, JavaScript, MySQL, React Native, Flutter, Python, ASP.NET, PHP</p>
+            </li>
+            <li class="liskills">
+              <h3 class="h3skills">Database Management</h3>
+              <p>SQL Server, MS Access, Firebase, SQL Lite</p>
+            </li>
+            <li class="liskills">
+              <h3 class="h3skills">Other</h3>
+              <p>Microsoft Teams, Azure DevOps, GitHub, Atlassian tools, SourceTree, Microsoft Office Tools</p>
+            </li>       
+        </ul>
+        
+    </div>
+    <div class="portfolio">
+        <h2 class="hh2" id="portfolio" style="color: #ED3D63; font-size: 40px; text-align: center;"><em>Portfolio</em></h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="img/karate_website.PNG" alt="Jane" style="width:100%; height: 200px;">
+                    <div class="container">
+                        <h2>Karate Website</h2>
+                        <p class="title">HTML, CSS, JavaScript</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p><button class="btndemo">Demo</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+            <div class="card">
+            <img src="img/starwars_website.PNG" alt="Mike" style="width:100%; height: 200px;">
+            <div class="container">
+                <h2>Star Wars Website</h2>
+                <p class="title">HTML, CSS</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p><button class="btndemo">Demo</button></p>
+            </div>
+            </div>
+            </div>
+        
+            <div class="column">
+            <div class="card">
+            <img src="img/sokoban.PNG" alt="John" style="width:100%; height: 200px;">
+            <div class="container">
+                <h2>Sokoban Game</h2>
+                <p class="title">C#</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p><button class="btndemo">Demo</button></p>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+            <h2 style="color: #ED3D63; font-size: 40px; text-align: center; padding-top: 100px;"><em>Let's Talk!</em></h2>
+            <form style=" text-align: center; padding-bottom: 100px;" action="MAILTO:kostyukanzhelika@gmail.com" method="post" enctype="text/plain">
+              <input type="text" id="name" name="name" placeholder="Name">
+              <input type="text" id="email" name="email" placeholder="Email">
+              <input type="text" id="subject" name="subject" placeholder="Subject">
+              <textarea id="message" name="message" placeholder="Message" style="height:170px"></textarea>
+                </br></br>
+              <input type="submit" value="Send">
+            </form>
+    </div>
+      <footer>
+        <p>&copy; 2022 Anzhelika Kostyuk</p><br>
+        Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a><br><br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </footer>
+</body>
+</html>
