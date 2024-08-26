@@ -1,5 +1,6 @@
 .intro{
     height: calc(100vh - 5rem);
+    max-width: 75rem;
     width: 100vm;
     margin: 0 auto;
     overflow: hidden;
@@ -47,4 +48,14 @@
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 2rem;
+}
+
+.heroSocial{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.heroIcon{
+    margin-right: 1rem;
 }

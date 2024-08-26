@@ -1,6 +1,7 @@
 .navbar{
     height: 5rem;
     width: 100vm;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
@@ -18,14 +19,15 @@
 }
 
 .menuItem{
-    margin: 3rem;
+    margin: 2rem;
     cursor: pointer;
 }
 
 .menuItem:hover{
-    color: yellow;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to left, #ff9720, #fc0865); 
+    border-image-slice: 1; 
 }
 
 .menuButton{
