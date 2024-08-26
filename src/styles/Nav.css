@@ -1,0 +1,38 @@
+.navbar{
+    height: 5rem;
+    width: 100vm;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+
+.menuItem{
+    margin: 3rem;
+    cursor: pointer;
+}
+
+.menuItem:hover{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.menuButton{
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
