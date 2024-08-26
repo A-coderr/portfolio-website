@@ -14,7 +14,7 @@ const Nav = () => {
                     <Link className="menuItem">Projects</Link>
                     <Link className="menuItem">Contact</Link>
                 </div>
-                <button className="menuButton">Resume</button>
+                <button className="menuButton"><a className="menuButtonLink" href="../../resume.docx" download>Resume</a></button>
             </nav>
         </>
     )

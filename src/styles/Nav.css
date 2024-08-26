@@ -21,6 +21,7 @@
 .menuItem{
     margin: 2rem;
     cursor: pointer;
+    font-size: medium;
 }
 
 .menuItem:hover{
@@ -31,10 +32,20 @@
 }
 
 .menuButton{
-    background: white;
-    color: black;
-    border: none;
-    display: flex;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: medium;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(rgb(26, 25, 30), rgb(26, 25, 30)), 
+                      linear-gradient(to left, #ff9720, #fc0865);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    cursor: pointer;
+}
+
+.menuButtonLink{
+    text-decoration: none;
+    color: white;
 }

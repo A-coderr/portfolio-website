@@ -11,6 +11,8 @@
     object-fit: cover;
     height: 50vh;
     padding-bottom: 0px;
+    background: gold;
+    border-radius: 5rem;
 }
 
 .heroContent{
