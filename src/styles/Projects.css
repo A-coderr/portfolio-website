@@ -1,0 +1,17 @@
+.projects{
+    overflow: hidden;
+    width: 100vm;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.projectsTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}

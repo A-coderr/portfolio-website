@@ -1,0 +1,48 @@
+.projectCardSection{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vm;
+    max-width: 75rem;
+}
+
+.projectCard{
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(rgb(26, 25, 30), rgb(26, 25, 30)), linear-gradient(to left, #ff9720, #fc0865);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin: 0.5rem;
+}
+
+.projectCardTitle{
+    padding: 1rem 0;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.projectCardDesc{
+    padding: 0 0.5rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.projectCardTech{
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projectCardTechItem{
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 50rem;
+    padding: 0.4rem 0.7rem;
+}
