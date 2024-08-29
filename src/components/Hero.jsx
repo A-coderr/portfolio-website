@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/Hero.css';
 import { Link } from "react-scroll";
-import avatar from '../assets/avatar_placeholder.PNG';
+import avatar from '../assets/portfolio_placeholder.webp';
 import { LinearGradient } from 'react-text-gradients'
 import { SocialIcon } from 'react-social-icons/component'
 import 'react-social-icons/instagram'
