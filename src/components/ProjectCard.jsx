@@ -1,121 +1,35 @@
-import React from 'react';
-import '../styles/ProjectCard.css';
-import placeholder from '../assets/karate_website_thumbnail.webp';
-
-const projects = [
-    {
-        thumbnail: 'Image Link',
-        name: 'Karate Website', 
-        desc: 'lorem ipsum', 
-        tech: [
-            {
-                name: 'HTML'
-            },
-            {
-                name: 'CSS'
-            }
-        ],
-        previewLink: 'preview link',
-        sourceLink: 'source link'
-  },
-  {
-    thumbnail: 'Image Link',
-    name: 'StarWars Website', 
-    desc: 'lorem ipsum', 
-    tech: [
-        {
-            name: 'HTML'
-        },
-        {
-            name: 'CSS'
-        }
-    ],
-    previewLink: 'preview link',
-    sourceLink: 'source link'
-}
-];
+import React from "react";
+import "../styles/ProjectCard.css";
+import placeholder from "../assets/karate_website_thumbnail.webp";
+import projects from "../data.json";
 
 function ProjectCard() {
-
-    /* const handleClick = async () => {
-        openLink();
-    };
-
-    const openLink = async () => {
-        window.open(props.url, "_blank");
-    }; */
-
   return (
     <>
-        <div className="projectCardSection">
-            <div className="projectCard">
-                <img src={placeholder} alt="Thumbnail" className="CardImage" />
-                    <span className="projectCardTitle">Karate Website</span>
-                    <span className="projectCardDesc">Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist | Web Technologies Enthusiast</span>
-                    <div className="projectCardTech">
-                        <span className="projectCardTechItem">HTML</span>
-                        <span className="projectCardTechItem">CSS</span>
-                    </div>
-                    <div className="projectCardButtonContainer">
-                        <button className="projectCardButtonPreview">Preview</button>
-                        <button className="projectCardButtonPreview">Source</button>
-                    </div> 
-            </div> 
-            <div className="projectCard">
+      <div className="projectCardSection">
+        {projects.map((project) => (
+          <div className="projectCard">
             <img src={placeholder} alt="Thumbnail" className="CardImage" />
-                    <span className="projectCardTitle">Karate Website</span>
-                    <span className="projectCardDesc">Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist | Web Technologies Enthusiast</span>
-                    <div className="projectCardTech">
-                        <span className="projectCardTechItem">HTML</span>
-                        <span className="projectCardTechItem">CSS</span>
-                    </div>
-                    <div className="projectCardButtonContainer">
-                        <button className="projectCardButtonPreview">Preview</button>
-                        <button className="projectCardButtonPreview">Source</button>
-                    </div> 
-            </div> 
-            <div className="projectCard">
-            <img src={placeholder} alt="Thumbnail" className="CardImage" />
-                    <span className="projectCardTitle">Karate Website</span>
-                    <span className="projectCardDesc">Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist | Web Technologies Enthusiast</span>
-                    <div className="projectCardTech">
-                        <span className="projectCardTechItem">HTML</span>
-                        <span className="projectCardTechItem">CSS</span>
-                    </div>
-                    <div className="projectCardButtonContainer">
-                        <button className="projectCardButtonPreview">Preview</button>
-                        <button className="projectCardButtonPreview">Source</button>
-                    </div>                  
-            </div> 
-            <div className="projectCard">
-            <img src={placeholder} alt="Thumbnail" className="CardImage" />
-                    <span className="projectCardTitle">Karate Website</span>
-                    <span className="projectCardDesc">Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist | Web Technologies Enthusiast</span>
-                    <div className="projectCardTech">
-                        <span className="projectCardTechItem">HTML</span>
-                        <span className="projectCardTechItem">CSS</span>
-                    </div>
-                    <div className="projectCardButtonContainer">
-                        <button className="projectCardButtonPreview">Preview</button>
-                        <button className="projectCardButtonPreview">Source</button>
-                    </div> 
+            <span className="projectCardTitle">{project.name}</span>
+            <span className="projectCardDesc">{project.desc}</span>
+            <div className="projectCardTech">
+              {project.tech.map((item) => {
+                return <span className="projectCardTechItem">{item.name}</span>;
+              })}
             </div>
-            <div className="projectCard">
-            <img src={placeholder} alt="Thumbnail" className="CardImage" />
-                    <span className="projectCardTitle">Karate Website</span>
-                    <span className="projectCardDesc">Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist | Web Technologies Enthusiast</span>
-                    <div className="projectCardTech">
-                        <span className="projectCardTechItem">HTML</span>
-                        <span className="projectCardTechItem">CSS</span>
-                    </div>
-                    <div className="projectCardButtonContainer">
-                        <button className="projectCardButtonPreview">Preview</button>
-                        <button className="projectCardButtonPreview">Source</button>
-                    </div> 
+            <div className="projectCardButtonContainer">
+              <button className="projectCardButtonPreview">
+                {project.previewLink}
+              </button>
+              <button className="projectCardButtonPreview">
+                {project.sourceLink}
+              </button>
             </div>
-        </div>          
+          </div>
+        ))}
+      </div>
     </>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;
