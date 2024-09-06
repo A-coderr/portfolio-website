@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "thumbnail": "Image Link",
+    "thumbnail": "../assets/karate_website.PNG",
     "name": "Karate Website",
     "desc": "Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist | Web Technologies Enthusiast",
     "tech": [
@@ -20,7 +20,7 @@
   },
   {
     "id": 2,
-    "thumbnail": "Image Link",
+    "thumbnail": "../assets/karate_website_thumbnail.webp",
     "name": "Karate Website",
     "desc": "Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist | Web Technologies Enthusiast",
     "tech": [
@@ -36,7 +36,7 @@
   },
   {
     "id": 3,
-    "thumbnail": "Image Link",
+    "thumbnail": "../assets/karate_website_thumbnail.webp",
     "name": "Karate Website",
     "desc": "Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist | Web Technologies Enthusiast",
     "tech": [
@@ -52,7 +52,7 @@
   },
   {
     "id": 4,
-    "thumbnail": "Image Link",
+    "thumbnail": "../assets/karate_website_thumbnail.webp",
     "name": "Karate Website",
     "desc": "Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist | Web Technologies Enthusiast",
     "tech": [
@@ -68,7 +68,7 @@
   },
   {
     "id": 5,
-    "thumbnail": "Image Link",
+    "thumbnail": "../assets/karate_website_thumbnail.webp",
     "name": "Karate Website",
     "desc": "Software Developer | Passionate about Building Scalable Solutions | C# & Unity Specialist",
     "tech": [

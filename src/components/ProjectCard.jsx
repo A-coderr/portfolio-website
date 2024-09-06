@@ -9,7 +9,7 @@ function ProjectCard() {
       <div className="projectCardSection">
         {projects.map((project) => (
           <div className="projectCard">
-            <img src={placeholder} alt="Thumbnail" className="CardImage" />
+            <img src={project.thumbnail} alt="Thumbnail" className="CardImage" />
             <span className="projectCardTitle">{project.name}</span>
             <span className="projectCardDesc">{project.desc}</span>
             <div className="projectCardTech">
