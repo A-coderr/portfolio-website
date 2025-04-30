@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://a-coderr.github.io/portfolio-website/sitemap.xml
